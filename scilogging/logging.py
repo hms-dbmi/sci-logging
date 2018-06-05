@@ -33,6 +33,7 @@ Request logging middleware
 
 import hashlib
 import sys
+import logging
 
 """
 ``logging_filters``
@@ -273,7 +274,7 @@ class LoggingConfiguration(object):
             'filters': {
                 # Add an unbound RequestFilter.
                 'request': {
-                    '()': 'sci-logging.logging.RequestFilter',
+                    '()': 'scilogging.logging.RequestFilter',
                 },
             },
             'handlers': {
